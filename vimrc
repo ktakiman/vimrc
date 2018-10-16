@@ -18,6 +18,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 " plugin on GitHub repo
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+
+Plugin 'vim-scripts/ReplaceWithRegister'
 
 "installing 'rename' plug-in isn't working, why?????
 "Plugin 'ddanro/rename.vim'
