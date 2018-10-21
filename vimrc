@@ -21,6 +21,13 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 
 Plugin 'vim-scripts/ReplaceWithRegister'
+Plugin 'vim-scripts/camelcasemotion'
+
+Plugin 'michaeljsmith/vim-indent-object'
+
+Plugin 'kana/vim-textobj-user'   "need this to install 'entire' and 'line
+Plugin 'kana/vim-textobj-entire'
+Plugin 'kana/vim-textobj-line'
 
 "installing 'rename' plug-in isn't working, why?????
 "Plugin 'ddanro/rename.vim'
