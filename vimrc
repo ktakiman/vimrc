@@ -62,8 +62,9 @@ set relativenumber
 set showcmd
 
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+
 set scrolloff=5
 
 set wildmenu
@@ -77,6 +78,7 @@ set smartcase  "do case-sensitive search if search word contains uppercase lette
 
 set foldmethod=indent
 "set hidegn "hides beffer instead of closing it? may like this in future
+
 syntax on
 
 "let base16colorspace=256  " Access colors present in 256 colorspace
