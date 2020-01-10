@@ -81,6 +81,8 @@ set foldmethod=indent
 
 set directory=$HOME/.vim/swapfiles/
 
+set clipboard=unnamed "make system clipboard a default"
+
 syntax on
 
 "let base16colorspace=256  " Access colors present in 256 colorspace
