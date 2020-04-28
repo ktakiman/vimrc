@@ -98,6 +98,9 @@ nnoremap <C-Up> <C-w>-
 nnoremap <C-Down> <C-w>+
 
 nnoremap Y y$
+nnoremap <Space> <C-d>
+nnoremap <S-Space> <C-u>
+
 inoremap <C-b> {<CR>}<Esc>O<Tab>
 
 let g:netrw_banner=0      " disable banner
