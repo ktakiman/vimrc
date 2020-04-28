@@ -79,6 +79,8 @@ set smartcase  "do case-sensitive search if search word contains uppercase lette
 set foldmethod=indent
 "set hidegn "hides beffer instead of closing it? may like this in future
 
+set clipboard=unnamed "make system clipboard a default"
+
 syntax on
 
 "let base16colorspace=256  " Access colors present in 256 colorspace
