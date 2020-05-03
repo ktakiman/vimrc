@@ -100,8 +100,8 @@ nnoremap <C-Up> <C-w>-
 nnoremap <C-Down> <C-w>+
 
 nnoremap Y y$
-nnoremap <Space> <C-d>
-nnoremap <S-Space> <C-u>
+nnoremap <Space> <C-d>zz
+nnoremap <S-Space> <C-u>zz
 
 inoremap <C-b> {<CR>}<Esc>O<Tab>
 
