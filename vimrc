@@ -86,7 +86,7 @@ set clipboard=unnamed "make system clipboard a default"
 syntax on
 
 "let base16colorspace=256  " Access colors present in 256 colorspace
-"colorscheme base16-solarized-dark-kei "this needs to come after 'syntax on'? why
+colorscheme base16-solarized-dark-kei-mac "this needs to come after 'syntax on'? why
 
 nnoremap <C-k> :n<Cr>
 nnoremap <C-j> :prev<Cr>
