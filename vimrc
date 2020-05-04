@@ -63,6 +63,7 @@ set showcmd
 
 set expandtab
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 
 set scrolloff=5
@@ -108,3 +109,4 @@ inoremap <C-b> {<CR>}<Esc>O<Tab>
 let g:netrw_banner=0      " disable banner
 let g:netrw_liststyle=3   " tree view
 
+set directory=$HOME/.vim/swapfiles/
