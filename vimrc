@@ -59,6 +59,7 @@ set hidden
 set number
 set relativenumber
 
+set nowrap
 set showcmd
 
 set expandtab
