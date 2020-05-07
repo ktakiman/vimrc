@@ -59,11 +59,14 @@ set hidden
 set number
 set relativenumber
 
+set nowrap
 set showcmd
 
 set expandtab
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
+set listchars=tab:▸\ ,eol:¬
 
 set scrolloff=5
 
@@ -102,8 +105,12 @@ nnoremap <C-Up> <C-w>-
 nnoremap <C-Down> <C-w>+
 
 nnoremap Y y$
+nnoremap <Space> <C-d>zz
+nnoremap <S-Space> <C-u>zz
+
 inoremap <C-b> {<CR>}<Esc>O<Tab>
 
 let g:netrw_banner=0      " disable banner
 let g:netrw_liststyle=3   " tree view
 
+set directory=$HOME/.vim/swapfiles/
