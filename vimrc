@@ -19,15 +19,18 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
 
 Plugin 'vim-scripts/ReplaceWithRegister'
-Plugin 'vim-scripts/camelcasemotion'
+"Plugin 'vim-scripts/camelcasemotion'
 
 Plugin 'michaeljsmith/vim-indent-object'
 
 Plugin 'kana/vim-textobj-user'   "need this to install 'entire' and 'line
 Plugin 'kana/vim-textobj-entire'
 Plugin 'kana/vim-textobj-line'
+
+Plugin 'preservim/nerdtree'
 
 "installing 'rename' plug-in isn't working, why?????
 "Plugin 'ddanro/rename.vim'
