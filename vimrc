@@ -87,13 +87,15 @@ set foldmethod=indent
 
 set clipboard=unnamed "make system clipboard a default"
 
+set directory=$HOME/.vim/swapfiles/
+
 syntax on
 
 "let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme base16-solarized-dark-kei "this needs to come after 'syntax on'? why
 
-nnoremap <C-k> :n<Cr>
-nnoremap <C-j> :prev<Cr>
+nnoremap <C-k> :n<CR>
+nnoremap <C-j> :prev<CR>
 
 nnoremap <S-Right> <C-w>l
 nnoremap <S-Left> <C-w>h
@@ -109,9 +111,12 @@ nnoremap Y y$
 nnoremap <Space> <C-d>zz
 nnoremap <S-Space> <C-u>zz
 
+nnoremap <C-n> :NERDTreeToggle<CR>
+
 inoremap <C-b> {<CR>}<Esc>O<Tab>
 
 let g:netrw_banner=0      " disable banner
 let g:netrw_liststyle=3   " tree view
 
-set directory=$HOME/.vim/swapfiles/
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
