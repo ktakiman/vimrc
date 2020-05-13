@@ -83,6 +83,8 @@ set ignorecase
 set smartcase  "do case-sensitive search if search word contains uppercase letter (still need ignorecase turned on)
 
 set foldmethod=indent
+set nofoldenable       "an attempt to start a document unfolded
+
 "set hidegn "hides beffer instead of closing it? may like this in future
 
 set clipboard=unnamed "make system clipboard a default"
