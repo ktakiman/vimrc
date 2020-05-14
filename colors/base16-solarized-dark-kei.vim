@@ -129,7 +129,7 @@ call <sid>hi("PMenuSel",      s:gui01, s:gui04, s:cterm01, s:cterm04, "reverse",
 call <sid>hi("TabLine",       s:gui03, s:gui01, s:cterm00, s:cterm0D, "none", "")
 call <sid>hi("TabLineFill",   s:gui03, s:gui01, s:cterm00, s:cterm0D, "none", "")
 call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm00, s:cterm0E, "none", "")
-call <sid>hi("EndofBuffer",    "", "", s:cterm03, s:cterm00, "none", "")
+call <sid>hi("EndOfBuffer",    "", "", s:cterm00, s:cterm00, "none", "")
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
