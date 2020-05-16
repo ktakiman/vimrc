@@ -91,6 +91,12 @@ set clipboard=unnamed "make system clipboard a default"
 
 set directory=$HOME/.vim/swapfiles/
 
+" https://vi.stackexchange.com/questions/17073/cursorlinenr-highlight-not-working
+if !has('nvim')
+  set cursorline
+  set cursorlineopt=number
+endif
+
 syntax on
 
 "let base16colorspace=256  " Access colors present in 256 colorspace
@@ -120,5 +126,15 @@ inoremap <C-b> {<CR>}<Esc>O<Tab>
 let g:netrw_banner=0      " disable banner
 let g:netrw_liststyle=3   " tree view
 
+let g:NERDTreeWinSize = 60
+let g:NERDTreeShowLineNumbers = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+
+autocmd FileType help setlocal number
+autocmd FileType nerdtree setlocal relativenumber
+
+" stop modifying the color scheme file, instead update colors here
+
+hi Directory ctermfg=6
+hi CursorLineNr cterm=none ctermfg=7
