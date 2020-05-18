@@ -127,14 +127,19 @@ let g:netrw_banner=0      " disable banner
 let g:netrw_liststyle=3   " tree view
 
 let g:NERDTreeWinSize = 60
+let g:NERDTreeMinimalUI = 1
 let g:NERDTreeShowLineNumbers = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
-autocmd FileType help setlocal number
-autocmd FileType nerdtree setlocal relativenumber
+autocmd FileType help setlocal number   "this does not work when the same file is reopened 
+autocmd FileType nerdtree,help setlocal relativenumber
 
 " stop modifying the color scheme file, instead update colors here
 
 hi Directory ctermfg=6
 hi CursorLineNr cterm=none ctermfg=7
+
+hi DiffAdd cterm=reverse ctermfg=4
+hi DiffDelete cterm=reverse ctermfg=7
+hi DiffText cterm=reverse
