@@ -32,6 +32,8 @@ Plugin 'kana/vim-textobj-line'
 
 Plugin 'preservim/nerdtree'
 
+"Plugin 'ycm-core/YouCompleteMe'     " cannot install on mingw64, python error
+
 "installing 'rename' plug-in isn't working, why?????
 "Plugin 'ddanro/rename.vim'
 
@@ -105,23 +107,9 @@ colorscheme base16-solarized-dark-kei "this needs to come after 'syntax on'? why
 nnoremap <C-k> :n<CR>
 nnoremap <C-j> :prev<CR>
 
-nnoremap <S-Right> <C-w>l
-nnoremap <S-Left> <C-w>h
-nnoremap <S-Up> <C-w>k
-nnoremap <S-Down> <C-w>j
-
-nnoremap <C-Right> <C-w>>
-nnoremap <C-Left> <C-w><
-nnoremap <C-Up> <C-w>-
-nnoremap <C-Down> <C-w>+
-
 nnoremap Y y$
-nnoremap <Space> <C-d>zz
-nnoremap <S-Space> <C-u>zz
 
 nnoremap <C-n> :NERDTreeToggle<CR>
-
-inoremap <C-b> {<CR>}<Esc>O<Tab>
 
 let g:netrw_banner=0      " disable banner
 let g:netrw_liststyle=3   " tree view
