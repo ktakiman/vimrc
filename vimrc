@@ -112,6 +112,10 @@ nnoremap Y y$
 
 nnoremap <C-n> :NERDTreeToggle<CR>
 
+let mapleader = "\<Space>"
+
+nnoremap <leader>tv :bel vert term<CR>
+
 let g:netrw_banner=0      " disable banner
 let g:netrw_liststyle=3   " tree view
 
