@@ -1,65 +1,3 @@
-set nocompatible
-
-"Vundle setup START -------------------- 
-
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-
-" plugin on GitHub repo
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rhubarb'
-
-Plugin 'vim-scripts/ReplaceWithRegister'
-"Plugin 'vim-scripts/camelcasemotion'
-
-Plugin 'michaeljsmith/vim-indent-object'
-
-Plugin 'kana/vim-textobj-user'   "need this to install 'entire' and 'line
-Plugin 'kana/vim-textobj-entire'
-Plugin 'kana/vim-textobj-line'
-
-Plugin 'preservim/nerdtree'
-
-"Plugin 'ycm-core/YouCompleteMe'     " cannot install on mingw64, python error
-
-"installing 'rename' plug-in isn't working, why?????
-"Plugin 'ddanro/rename.vim'
-
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-"Plugin 'git://git.wincent.com/command-t.git'
-
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
-
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-"Vundle setup END -------------------- 
-
 set hidden
 
 set number
@@ -102,8 +40,25 @@ endif
 
 syntax on
 
-"let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-solarized-dark-kei "this needs to come after 'syntax on'? why
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'michaeljsmith/vim-indent-object'
+
+Plug 'kana/vim-textobj-user'   "need this to install 'entire' and 'line
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-line'
+
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+
+Plug 'preservim/nerdtree'
+
+call plug#end()
+
 
 nnoremap <C-k> :n<CR>
 nnoremap <C-j> :prev<CR>
@@ -127,6 +82,10 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 
 autocmd FileType help setlocal number   "this does not work when the same file is reopened 
 autocmd FileType nerdtree,help setlocal relativenumber
+
+
+"let base16colorspace=256  " Access colors present in 256 colorspace
+colorscheme base16-solarized-dark-kei "this needs to come after 'syntax on'? why
 
 " stop modifying the color scheme file, instead update colors here
 
