@@ -26,11 +26,15 @@ set smartcase  "do case-sensitive search if search word contains uppercase lette
 set foldmethod=indent
 set nofoldenable       "an attempt to start a document unfolded
 
-"set hidegn "hides beffer instead of closing it? may like this in future
-
 set clipboard=unnamed "make system clipboard a default"
 
-set directory=$HOME/.vim/swapfiles/
+set noswapfile
+set nobackup "
+set undofile
+set undodir=$HOME/.vim/undodir
+
+set splitright
+set splitbelow
 
 " https://vi.stackexchange.com/questions/17073/cursorlinenr-highlight-not-working
 if !has('nvim')
@@ -57,7 +61,10 @@ Plug 'tpope/vim-rhubarb'
 
 Plug 'preservim/nerdtree'
 
+Plug 'mbbill/undotree'
+
 call plug#end()
+
 
 
 nnoremap <C-k> :n<CR>
@@ -70,6 +77,8 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 let mapleader = "\<Space>"
 
 nnoremap <leader>tv :bel vert term<CR>
+
+nnoremap <leader>u :UndotreeToggle<CR>
 
 let g:netrw_banner=0      " disable banner
 let g:netrw_liststyle=3   " tree view
