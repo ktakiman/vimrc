@@ -100,6 +100,8 @@ colorscheme base16-solarized-dark-kei "this needs to come after 'syntax on'? why
 
 hi Directory ctermfg=6
 hi CursorLineNr cterm=none ctermfg=7
+hi Visual cterm=reverse ctermfg=8 ctermbg=14
+hi Cursor cterm=reverse ctermbg=8
 
 hi DiffAdd cterm=reverse ctermfg=4
 hi DiffDelete cterm=reverse ctermfg=7
